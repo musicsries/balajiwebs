@@ -21,25 +21,22 @@ const [loginLoading, setLoginLoading] = useState(false);
 const { toast } = useToast();
 
 useEffect(() => {
+  const { data: { subscription } } =
+    supabase.auth.onAuthStateChange(
+      (_event: AuthChangeEvent, session: Session | null) => {
+        setSession(session);
+        setAuthLoading(false);
+      }
+    );
 
-const { data: { subscription } } = supabase.auth.onAuthStateChange((_e, s) => {
+  supabase.auth.getSession().then(({ data: { session } }) => {
+    setSession(session);
+    setAuthLoading(false);
+  });
 
-setSession(s);
-
-setAuthLoading(false);
-
-});
-
-supabase.auth.getSession().then(({ data: { session: s } }) => {
-
-setSession(s);
-
-setAuthLoading(false);
-
-});
-
-return () => subscription.unsubscribe();
-
+  return () => {
+    subscription.unsubscribe();
+  };
 }, []);
 
 const handleLogin = async (e: React.FormEvent) => {
