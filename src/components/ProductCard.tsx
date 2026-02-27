@@ -1,7 +1,6 @@
 import { MessageCircle } from 'lucide-react';
 
-import type { Product } from '@/lib/supabase';
-
+import type { Product } from '../lib/supabase';
 import { whatsappProductLink } from './WhatsAppButton';
 
 const ProductCard = ({ product }: { product: Product }) => {
