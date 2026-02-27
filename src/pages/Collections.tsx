@@ -35,15 +35,20 @@ const { data } = await supabase
 .order('created_at', { ascending: false });
 
 if (data) {
+  const products = data as Product[];
 
-setProducts(data as Product[]);
+  setProducts(products);
 
-const cats = [...new Set(data.map((p: Product) => p.category).filter(Boolean))];
+  const cats = [
+    ...new Set(
+      products
+        .map((p) => p.category)
+        .filter((c): c is string => Boolean(c))
+    ),
+  ];
 
-setCategories(cats);
-
+  setCategories(cats);
 }
-
 setLoading(false);
 
 };
