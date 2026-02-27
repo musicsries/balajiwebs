@@ -229,7 +229,7 @@ className="flex items-center gap-1.5 gold-gradient text-primary-foreground px-5 
 
 </button>
 
-</div
+</div>
 
 {loading ? (
 
