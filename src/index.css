@@ -130,20 +130,14 @@
 }
 
 body {
-
-@apply bg-white text-black;
-
-
-font-family: var(--font-body);
-
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: var(--font-body);
 }
-
 h1, h2, h3, h4, h5, h6 {
-
-font-family: var(--font-heading);
-
+  font-family: var(--font-heading);
+  color: hsl(var(--gold)); /* optional: give headings a gold color */
 }
-
 
 
 @layer components {
