@@ -201,8 +201,12 @@ return (
 
 <h1 className="font-heading text-lg font-bold">Admin Dashboard</h1>
 
-<button onClick={onLogout} className="w-4 h-4" /> Logout
-
+<button
+  onClick={onLogout}
+  className="flex items-center gap-2 text-sm font-medium"
+>
+  <LogOut className="w-4 h-4" />
+  Logout
 </button>
 
 </div>
