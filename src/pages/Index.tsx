@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
-import heroBanner from '@/assets/hero-banner.jpg';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-import WhatsAppButton from '@/components/WhatsAppButton';
+import heroBanner from "../assets/hero-banner.jpg";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import WhatsAppButton from "../components/WhatsAppButton";
 
 const Index = () => {
   return (
