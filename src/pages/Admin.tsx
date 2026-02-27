@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 
-import { supabase, type Product } from '@/lib/supabase';
+import { supabase, type Product } from "../lib/supabase";
 
 import { LogOut, Plus, Pencil, Trash2, X, Upload } from 'lucide-react';
 
-import { useToast } from '@/hooks/use-toast';
+import { useToast } from "../hooks/use-toast";
 
 const Admin = () => {
 
