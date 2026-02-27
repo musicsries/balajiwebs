@@ -6,6 +6,8 @@ import { LogOut, Plus, Pencil, Trash2, X, Upload } from 'lucide-react';
 
 import { useToast } from "../hooks/use-toast";
 
+import { Session, AuthChangeEvent } from "@supabase/supabase-js";
+
 const Admin = () => {
 
 const [session, setSession] = useState<any>(null);
