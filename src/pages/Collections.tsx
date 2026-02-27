@@ -1,14 +1,14 @@
 import { useEffect, useState } from 'react';
 
-import { supabase, type Product } from '@/lib/supabase';
+import { supabase, type Product } from "../lib/supabase";
 
-import Navbar from '@/components/Navbar';
+import Navbar from "../components/Navbar";
 
-import Footer from '@/components/Footer';
+import Footer from "../components/Footer";
 
-import ProductCard from '@/components/ProductCard';
+import ProductCard from "../components/ProductCard";
 
-import WhatsAppButton from '@/components/WhatsAppButton';
+import WhatsAppButton from "../components/WhatsAppButton";
 
 const Collections = () => {
 
