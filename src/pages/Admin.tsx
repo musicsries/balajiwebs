@@ -443,12 +443,9 @@ setSaving(true);
 
 
 const colors = colorsInput
-
-.split(',')
-
-.map((c) => c.trim())
-
-.filter(Boolean);
+  .split(',')
+  .map((c: string) => c.trim())
+  .filter(Boolean);
 
 const payload = {
 
