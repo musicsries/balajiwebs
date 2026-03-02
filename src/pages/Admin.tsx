@@ -51,24 +51,14 @@ const handleLogin = async (e: React.FormEvent) => {
   });
 
 if (error) {
-    toast({
-      title: "Login failed",
-      description: error.message,
-      variant: "destructive",
-    });
+    alert(error.message);
     setLoginLoading(false);
     return;
   }
 
-  toast({
-    title: "Login successful",
-    description: "Welcome back!",
-  });
-
+  setSession(data.session); // 🔥 THIS LINE IS IMPORTANT
   setLoginLoading(false);
 };
-};
-
 
 const handleLogout = async () => {
 
