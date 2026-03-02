@@ -42,17 +42,31 @@ useEffect(() => {
 }, []);
 
 const handleLogin = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setLoginLoading(true);
 
-e.preventDefault();
+  const { data, error } = await supabase.auth.signInWithPassword({
+    email,
+    password,
+  });
 
-setLoginLoading(true);
+if (error) {
+    toast({
+      title: "Login failed",
+      description: error.message,
+      variant: "destructive",
+    });
+    setLoginLoading(false);
+    return;
+  }
 
-const { error } = await supabase.auth.signInWithPassword({ email, password });
+  toast({
+    title: "Login successful",
+    description: "Welcome back!",
+  });
 
-if (error) toast({ title: 'Login failed', description: error.message, variant: 'destructive' });
-
-setLoginLoading(false);
-
+  setLoginLoading(false);
+};
 };
 
 
