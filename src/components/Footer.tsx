@@ -13,6 +13,8 @@ const Footer = () => (
         Your trusted destination for premium ethnic & modern fashion. Quality fabrics, timeless designs, and unbeatable prices.
       </p>
     </div>
+
+    <div>
 <div>
       <h4 className="font-heading text-lg font-semibold mb-3 text-[hsl(var(--gold))]">
         Quick Links
@@ -23,13 +25,14 @@ const Footer = () => (
         <Link to="/about" className="block hover:opacity-90">About Us</Link>
       </div>
     </div>
-<div>
+
+    <div>
       <h4 className="font-heading text-lg font-semibold mb-3 text-[hsl(var(--gold))]">
         Contact
       </h4>
       <div className="space-y-2 text-sm opacity-80">
         <a
-          href="https://goo.gl/maps/HdMem9BEi7FXS9NbA"
+         href="https://goo.gl/maps/HdMem9BEi7FXS9NbA"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 hover:opacity-90"
@@ -37,15 +40,15 @@ const Footer = () => (
           <MapPin className="w-4 h-4" />
           123 Market Street, City, India
         </a>
-<a href="tel:+919380738510" className="flex items-center gap-2 hover:opacity-90">
+
+        <a href="tel:+919380738510" className="flex items-center gap-2 hover:opacity-90">
           <Phone className="w-4 h-4" />
           +91 93807 38510
         </a>
       </div>
     </div>
   </div>
-
-  <div className="container mx-auto px-4 mt-8 pt-6 border-t border-background/20 text-center text-xs opacity-60">
+<div className="container mx-auto px-4 mt-8 pt-6 border-t border-background/20 text-center text-xs opacity-60">
     © {new Date().getFullYear()} Balaji Collections. All rights reserved.
   </div>
 </footer>
