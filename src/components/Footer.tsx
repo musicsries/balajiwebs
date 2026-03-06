@@ -18,19 +18,19 @@ const Footer = () => (
 <div>
       <h4 className="font-heading text-lg font-semibold mb-3 text-[hsl(var(--gold))]">
         Quick Links
-      </h4>
-      <div className="space-y-2 text-sm opacity-80">
-        <Link to="/" className="block hover:opacity-90">Home</Link>
-        <Link to="/collections" className="block hover:opacity-90">Collections</Link>
-        <Link to="/about" className="block hover:opacity-90">About Us</Link>
+        </h4>
+        <div className="space-y-2 text-sm">
+          <Link to="/" className="block hover:opacity-90">Home</Link>
+          <Link to="/collections" className="block hover:opacity-90">Collections</Link>
+          <Link to="/about" className="block hover:opacity-90">About Us</Link>
+        </div>
       </div>
-    </div>
 
-    <div>
-      <h4 className="font-heading text-lg font-semibold mb-3 text-[hsl(var(--gold))]">
-        Contact
+      <div>
+        <h4 className="font-heading text-lg font-semibold mb-3 text-[hsl(var(--gold))]">
+          Contact
       </h4>
-      <div className="space-y-2 text-sm opacity-80">
+      <div className="space-y-2 text-sm">
         <a
          href="https://goo.gl/maps/HdMem9BEi7FXS9NbA"
           target="_blank"
@@ -48,7 +48,7 @@ const Footer = () => (
       </div>
     </div>
   </div>
-<div className="container mx-auto px-4 mt-8 pt-6 border-t border-background/20 text-center text-xs opacity-60">
+<div className="container mx-auto px-4 mt-8 pt-6 border-t border-white/20 text-center text-xs">
     © {new Date().getFullYear()} Balaji Collections. All rights reserved.
   </div>
 </footer>
