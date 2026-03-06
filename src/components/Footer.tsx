@@ -3,7 +3,7 @@ import { MapPin, Phone } from 'lucide-react';
 
 const Footer = () => (
 
-<footer className="bg-foreground text-background py-12 mt-16">
+<footer className="bg-black text-white py-12 mt-16">
   <div className="container mx-auto px-4 grid gap-8 md:grid-cols-3">
 
     <div>
@@ -18,7 +18,7 @@ const Footer = () => (
     <div>
       <h4 className="font-heading text-lg font-semibold mb-3">Quick Links</h4>
 
-      <div className="space-y-2 text-sm opacity-80">
+ <div className="space-y-2 text-sm text-white">
         <Link to="/" className="block hover:opacity-100">Home</Link>
 
 <Link to="/collections" className="block hover:opacity-100">
@@ -34,8 +34,7 @@ const Footer = () => (
     <div>
       <h4 className="font-heading text-lg font-semibold mb-3">Contact</h4>
 
-<div className="space-y-2 text-sm opacity-80">
-
+<div className="space-y-2 text-sm text-white">
         <a
 
 href="https://goo.gl/maps/HdMem9BEi7FXS9NbA"
