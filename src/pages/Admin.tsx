@@ -43,8 +43,6 @@ useEffect(() => {
 
 const handleLogin = async (e: React.FormEvent) => {
   e.preventDefault();
-  console.log("Login started");
-
   setLoginLoading(true);
 
   const { data, error } = await supabase.auth.signInWithPassword({
@@ -52,15 +50,14 @@ const handleLogin = async (e: React.FormEvent) => {
     password,
   });
 
-  console.log("Response:", data, error);
-
   if (error) {
-    alert(error.message);
+    toast({
+      title: "Login failed",
+      description: error.message,
+    });
     setLoginLoading(false);
     return;
   }
-
-  console.log("Login success");
 
   setLoginLoading(false);
 };
