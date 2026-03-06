@@ -7,7 +7,7 @@ const Footer = () => (
   <div className="container mx-auto px-4 grid gap-8 md:grid-cols-3">
 
     <div>
-      <h3 className="font-heading text-xl font-bold mb-3">Balaji Collections</h3>
+      <h3 className="font-heading text-xl font-bold mb-3">Balaji Saree</h3>
 
 <p className="text-sm opacity-80 leading-relaxed">
         Your trusted destination for premium ethnic & modern fashion. 
